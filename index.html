@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="scroll-up-btn">
+      <span class="arrow-up"></span>
+    </button>
+    <button class="btn-mode"><img src="./Img/dark-mode.png" alt="" /></button>
+    <div class="navigation">
+      
+      <nav>
+        <ul class="pcMenu">
+          <li><a href="#champs">Champs</a></li>
+          <li><a href="#logIn">Log In</a></li>
+          <li><a href="#foot">Contact</a></li>
+        </ul>
+        <div class="hamMenu"><img src="./Img/hammenu.png"></div> 
+        <div class="mobMenu">
+          <ul class="moblist">
+            <li><a href="#champs">Champs</a></li>
+            <li><a href="#logIn">Log In</a></li>
+            <li><a href="#foot">Contact</a></li>
+          </ul>
+        </div>       
+      </nav>
+      
+    </div>
+    <div class="hero-section">
+      <h1>League of Legends</h1>
+    </div>
+    <section class="pictures">
+      <h2 id="champs">Choose your champions!</h2>
+      <div class="grid">
+        <div class="radio">
+          <form class="jungler">
+            <fieldset>
+              <legend>Choose a jungler!</legend>
+              <div>
+                <input type="radio" name="picture1" value="amumu" />
+                <label for="amumu">Amumu</label>
+              </div>
+              <div>
+                <input type="radio" name="picture1" value="lee-sin" />
+                <label for="lee-sin">Lee Sin</label>
+              </div>
+              <div>
+                <input type="radio" name="picture1" value="lillia" />
+                <label for="lillia">Lillia</label>
+              </div>
+              <div>
+                <input type="radio" name="picture1" value="maokai" />
+                <label for="maokai">Maokai</label>
+              </div>
+              <div>
+                <input type="radio" name="picture1" value="nocturne" />
+                <label for="nocturne">Nocturne</label>
+              </div>
+              <button class="pick" type="submit">Pick!</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="radio">
+          <form class="mid-laner">
+            <fieldset>
+              <legend>Choose a mid!</legend>
+              <div>
+                <input type="radio" name="picture2" value="ahri" />
+                <label for="ahri">Ahri</label>
+              </div>
+              <div>
+                <input type="radio" name="picture2" value="azir" />
+                <label for="azir">Azir</label>
+              </div>
+              <div>
+                <input type="radio" name="picture2" value="cassiopeia" />
+                <label for="cassiopeia">Cassiopeia</label>
+              </div>
+              <div>
+                <input type="radio" name="picture2" value="fizz" />
+                <label for="fizz">Fizz</label>
+              </div>
+              <div>
+                <input type="radio" name="picture2" value="kassadin" />
+                <label for="kassadin">Kassadin</label>
+              </div>
+              <button class="pick" type="submit">Pick!</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="radio">
+          <form class="supp">
+            <fieldset>
+              <legend>Choose a support!</legend>
+              <div>
+                <input type="radio" name="picture3" value="bard" />
+                <label for="bard">Bard</label>
+              </div>
+              <div>
+                <input type="radio" name="picture3" value="braum" />
+                <label for="braum">Braum</label>
+              </div>
+              <div>
+                <input type="radio" name="picture3" value="janna" />
+                <label for="janna">Janna</label>
+              </div>
+              <div>
+                <input type="radio" name="picture3" value="karma" />
+                <label for="karma">Karma</label>
+              </div>
+              <div>
+                <input type="radio" name="picture3" value="nautilus" />
+                <label for="nautilus">Nautilus</label>
+              </div>
+              <button class="pick" type="submit">Pick!</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="wrap-pic">
+          <img class="jungle picture" src="./Img/lol.jpg" alt="jungle pic" />
+        </div>
+        <div class="wrap-pic">
+          <img class="mid picture" src="./Img/lol.jpg" alt="mid pic" />
+        </div>
+        <div class="wrap-pic">
+          <img class="support picture" src="./Img/lol.jpg" alt="support pic" />
+        </div>
+        <div class="reset">
+          <button class="resetbtn r1">Reset</button>
+        </div>
+        <div class="reset">
+          <button class="resetbtn r2">Reset</button>
+        </div>
+        <div class="reset">
+          <button class="resetbtn r3">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="forms" id="logIn">
+      <h2>Log In!</h2>
+      <div class="form">
+        <form class="passform">
+          <input class="pass1" type="password" name="" id="" />
+          <input class="pass2" type="password" name="" id="" />
+          <p class="passtext"></p>
+          <input class="submitpass" type="submit" value="Log In!">
+        </form>
+      </div>
+    </section>
+    <footer id="foot">
+      <p>Contact: <a class="mail" href="mailto:musildenis@gmail.com">mail</a></p>
+      <p>2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

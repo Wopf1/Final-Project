@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scroll-up-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  z-index: 1;
+  border-radius: 99%;
+  cursor: pointer;
+  background-color: rgb(99, 10, 94);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-up {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 4px solid whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+  pointer-events: none;
+  margin-top: 5px;
+  transform: rotate(135deg);
+}
+
+.btn-mode {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  z-index: 1;
+  background-color: rgb(99, 10, 94);
+  border-radius: 99%;
+}
+
+.btn-mode img {
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgb(99, 10, 94);
+}
+.mobMenu {
+  display: none;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  background-color: rgb(99, 10, 94);
+}
+
+.moblist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamMenu {
+  display: none;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 20px;
+}
+.hamMenu img {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+li a:hover {
+  color: red;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 50px);
+  text-align: center;
+  background-image: url(./Img/yasuo-light.jpg);
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: rgb(211, 17, 211);
+  font-size: 69px;
+  font-weight: 300;
+  position: absolute;
+  text-shadow: 1px 1px 2px rgb(1, 10, 20), 2px 2px 3px rgb(0, 0, 0);
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.pictures {
+  background-color: rgb(216, 183, 213);
+}
+
+.grid {
+  padding: 0% 5%;
+  min-height: 800px;
+  height: 100%;
+  display: block;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 5px;
+}
+form {
+  height: 100%;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: -15px;
+  background-color: rgb(216, 183, 213);
+}
+
+form div {
+  margin-top: 15px;
+}
+
+.pick {
+  margin: 10px;
+  width: 50px;
+  height: 30px;
+  border-radius: 20%;
+  background-color: rgb(211, 94, 191);
+}
+
+.wrap-pic {
+  max-height: 395px;
+  max-width: 569px;
+}
+.picture {
+  height: 100%;
+  width: 100%;
+  transition: 3s;
+}
+
+.jungle:hover,
+.mid:hover,
+.support:hover {
+  z-index: 1;
+  position: relative;
+}
+
+.jungle:hover {
+  transform: translateX(100%) scale(1.3);
+}
+
+.mid:hover {
+  transform: scale(1.3);
+}
+
+.support:hover {
+  transform: translateX(-90%) scale(1.3);
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(233, 77, 111);
+}
+
+.forms {
+  background-image: url(./Img/lolback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passform {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.mail {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.mail:hover {
+  color: red;
+}
+
+.dark-mode {
+  background-color: black;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 700px) {
+  .pcMenu {
+    display: none;
+  }
+  .hamMenu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobMenu {
+    display: none !important;
+  }
+}
+
+
